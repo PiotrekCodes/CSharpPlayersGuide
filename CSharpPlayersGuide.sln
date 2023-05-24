@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuntingTheManticore", "Hunt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulasTestEnums", "SimulasTestEnums\SimulasTestEnums.csproj", "{B3199130-5029-4402-AEE8-785C13AA7259}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulasSoupTuples", "SimulasSoupTuples\SimulasSoupTuples.csproj", "{8897B03C-A689-4D37-BBFB-0ED78B56E61C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B3199130-5029-4402-AEE8-785C13AA7259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3199130-5029-4402-AEE8-785C13AA7259}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3199130-5029-4402-AEE8-785C13AA7259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8897B03C-A689-4D37-BBFB-0ED78B56E61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8897B03C-A689-4D37-BBFB-0ED78B56E61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8897B03C-A689-4D37-BBFB-0ED78B56E61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8897B03C-A689-4D37-BBFB-0ED78B56E61C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
