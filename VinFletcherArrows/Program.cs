@@ -1,6 +1,6 @@
 ﻿Console.WriteLine(WelcomeMessage());
 Arrow arrow = GetArrow();
-Console.WriteLine($"Your arrow will cost {arrow.GetCost()}");
+Console.WriteLine($"Your arrow will cost {arrow.GetCost()} gold coins.");
 
 Arrow GetArrow()
 {
@@ -59,9 +59,9 @@ ArrowHead GetArrowHead()
 
 class Arrow
 {
-    public ArrowHead arrowHead;
-    public Fletching fletching;
-    public int arrowLength;
+    private ArrowHead arrowHead;
+    private Fletching fletching;
+    private int arrowLength;
     
     public Arrow(ArrowHead arrowHead, Fletching fletching, int arrowLength)
     {
@@ -69,6 +69,10 @@ class Arrow
         this.fletching = fletching;
         this.arrowLength = arrowLength;
     }
+    
+    public ArrowHead GetArrowHead() => arrowHead;
+    public Fletching GetFletching() => fletching;
+    public int GetArrowLength() => arrowLength;
 
     public float GetCost()
     {
@@ -109,7 +113,9 @@ enum Fletching
 
 
 
-// THEORY
+
+
+// THEORY LEVEL 18
 
 // Score score = new Score("R2-D2", 12420, 8);
 //
