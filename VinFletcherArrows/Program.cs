@@ -59,9 +59,9 @@ ArrowHead GetArrowHead()
 
 class Arrow
 {
-    private ArrowHead arrowHead;
-    private Fletching fletching;
-    private int arrowLength;
+    private ArrowHead arrowHead { get; }
+    private Fletching fletching { get; }
+    private int arrowLength { get; }
     
     public Arrow(ArrowHead arrowHead, Fletching fletching, int arrowLength)
     {
@@ -70,9 +70,9 @@ class Arrow
         this.arrowLength = arrowLength;
     }
     
-    public ArrowHead GetArrowHead() => arrowHead;
-    public Fletching GetFletching() => fletching;
-    public int GetArrowLength() => arrowLength;
+    // public ArrowHead GetArrowHead() => arrowHead;
+    // public Fletching GetFletching() => fletching;
+    // public int GetArrowLength() => arrowLength;
 
     public float GetCost()
     {
