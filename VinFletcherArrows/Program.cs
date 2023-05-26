@@ -1,5 +1,5 @@
 ﻿Console.WriteLine(WelcomeMessage());
-Arrow arrow = GetArrow();
+Arrow arrow = GetArrowMenu();
 Console.WriteLine($"Your arrow will cost {arrow.GetCost()} gold coins.");
 
 Arrow GetArrow()
@@ -13,6 +13,22 @@ Arrow GetArrow()
 string WelcomeMessage()
 {
     return "Welcome to Vin Fletcher's Arrow Shop";
+}
+
+// Menu items for the arrow shop
+Arrow GetArrowMenu()
+{
+    Console.WriteLine("What arrow do you want?");
+    Console.WriteLine("1-elite, 2-beginner, 3-marksman or custom?");
+    int arrowMenu = Convert.ToInt32(Console.ReadLine());
+    
+    return arrowMenu switch
+    {
+        1 => Arrow.CreateEliteArrow(),
+        2 => Arrow.CreateBeginnerArrow(),
+        3 => Arrow.CreateMarksmanArrow(),
+        _ => GetArrow(),
+    };
 }
 
 
@@ -70,9 +86,6 @@ class Arrow
         this.arrowLength = arrowLength;
     }
     
-    // public ArrowHead GetArrowHead() => arrowHead;
-    // public Fletching GetFletching() => fletching;
-    // public int GetArrowLength() => arrowLength;
 
     public float GetCost()
     {
@@ -94,6 +107,12 @@ class Arrow
         
         return arrowHeadCost + fletchingCost + shaftCost;
     }
+    
+    // Static Methods To Create Specific Arrows
+    public static Arrow CreateEliteArrow() => new Arrow(ArrowHead.steel, Fletching.plastic, 95);
+    public static Arrow CreateBeginnerArrow() => new Arrow(ArrowHead.wood, Fletching.goose, 75);
+    public static Arrow CreateMarksmanArrow() => new Arrow(ArrowHead.steel, Fletching.goose, 65);
+
 }
 
 enum ArrowHead
