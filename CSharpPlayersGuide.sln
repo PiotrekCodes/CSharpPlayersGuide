@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Color", "The Color\The 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Card", "The Card\The Card.csproj", "{68446D66-D324-4EC5-BB5D-5D75DB1B634B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Locked Door", "The Locked Door\The Locked Door.csproj", "{25FC3034-14DF-4A28-8947-7A9A7F5BC056}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{68446D66-D324-4EC5-BB5D-5D75DB1B634B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68446D66-D324-4EC5-BB5D-5D75DB1B634B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68446D66-D324-4EC5-BB5D-5D75DB1B634B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25FC3034-14DF-4A28-8947-7A9A7F5BC056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25FC3034-14DF-4A28-8947-7A9A7F5BC056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25FC3034-14DF-4A28-8947-7A9A7F5BC056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25FC3034-14DF-4A28-8947-7A9A7F5BC056}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
